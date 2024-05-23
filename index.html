@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Luas dan Keliling Segitiga</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulator Luas dan Keliling Segitiga</h1>
+    <p>Selamat datang! Gunakan kalkulator di bawah ini untuk menghitung luas atau keliling segitiga.</p>
+    <button id="switchButton">Switch to Keliling Segitiga</button>
+    
+    <section id="luasSection" class="active">
+      <h2>Menghitung Luas Segitiga</h2>
+      <img src="https://static.cdntap.com/tap-assets-prod/wp-content/uploads/sites/24/2022/10/5-8.jpg?width=450&quality=90" alt="Rumus Luas Segitiga">
+      <form id="luasForm">
+        <label for="alas">Alas (a):</label>
+        <input type="number" id="alas" required>
+        <label for="tinggi">Tinggi (t):</label>
+        <input type="number" id="tinggi" required>
+        <button type="button" id="hitungLuas">Hitung Luas</button>
+        <button type="reset">Reset</button>
+      </form>
+      <p>Penjabaran: <span id="luasPenjabaran"></span></p>
+      <p>Hasil: <span id="luasHasil"></span></p>
+    </section>
+    
+    <section id="kelilingSection">
+      <h2>Menghitung Keliling Segitiga</h2>
+      <img src="https://static.cdntap.com/tap-assets-prod/wp-content/uploads/sites/24/2022/10/6-4.jpg?width=450&quality=90" alt="Rumus Keliling Segitiga">
+      <form id="kelilingForm">
+        <label for="sisiA">Sisi a:</label>
+        <input type="number" id="sisiA" required>
+        <label for="sisiB">Sisi b:</label>
+        <input type="number" id="sisiB" required>
+        <label for="sisiC">Sisi c:</label>
+        <input type="number" id="sisiC" required>
+        <button type="button" id="hitungKeliling">Hitung Keliling</button>
+        <button type="reset">Reset</button>
+      </form>
+      <p>Penjabaran: <span id="kelilingPenjabaran"></span></p>
+      <p>Hasil: <span id="kelilingHasil"></span></p>
+    </section>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
