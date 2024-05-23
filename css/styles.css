@@ -6,11 +6,12 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly; /* Changed to distribute space between container and footer */
+    justify-content: space-between;
     min-height: 100vh;
   }
   
